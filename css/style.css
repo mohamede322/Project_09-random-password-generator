@@ -1,0 +1,86 @@
+body {
+  font-family: "Cairo", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4c3f91;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(55, 43, 119);
+  padding: 30px;
+  color: white;
+}
+.s-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.results {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: rgb(32, 22, 87);
+  padding: 0 10px 0 0;
+}
+#result {
+  cursor: default;
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.results i {
+  cursor: pointer;
+  font-size: 30px;
+}
+#length {
+  width: 50px;
+  padding: 2px 5px 2px 5px;
+}
+#getpw-btn {
+  cursor: pointer;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgb(32, 22, 87);
+  color: white;
+  transition: 0.1s;
+}
+#getpw-btn:hover {
+  background: rgb(37, 26, 97);
+}
+.own {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: rgb(32, 22, 87);
+}
+@media (max-width: 767px) {
+  .own {
+    display: none;
+  }
+}

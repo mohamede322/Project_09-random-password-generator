@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="own">
+        Made By <br />
+        <a href="https://www.facebook.com/mo.essam22/">Mohamed Essam</a>
+      </h1>
+      <div class="box">
+        <h1>Password Generator</h1>
+        <div class="results">
+          <input type="text" id="result" readonly />
+          <i class="far fa-clipboard" id="copy-btn" title="Copy"></i>
+        </div>
+        <div class="length s-box">
+          <label for="length">Password Length </label>
+          <input type="number" id="length" value="20" />
+        </div>
+        <div class="symbols s-box">
+          <label for="symbol">Include Symbols</label>
+          <input type="checkbox" id="symbol" checked />
+        </div>
+        <div class="numbers s-box">
+          <label for="numbers">Include Numbers</label>
+          <input type="checkbox" id="numbers" checked />
+        </div>
+        <div class="lowercase s-box">
+          <label for="lowercase">Include LowerCase</label>
+          <input type="checkbox" id="lowercase" checked />
+        </div>
+        <div class="uppercase s-box">
+          <label for="uppercase">Include UpperCase</label>
+          <input type="checkbox" id="uppercase" checked />
+        </div>
+        <button id="getpw-btn" title="Get Random Password">
+          Get Random Password
+        </button>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="main.js"></script>
+  </body>
+</html>
